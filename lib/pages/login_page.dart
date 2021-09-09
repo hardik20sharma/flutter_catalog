@@ -6,7 +6,9 @@ class LoginPage extends StatefulWidget {
   _LoginPageState createState() => _LoginPageState();
 }
 
+// Underscore in Dart means variable is private
 class _LoginPageState extends State<LoginPage> {
+  
   String name = "";
   bool changeButton = false;
 
@@ -15,11 +17,9 @@ class _LoginPageState extends State<LoginPage> {
     return Material(
         color: Colors.white,
         child: SingleChildScrollView(
-            child: Column(children: [
+          child: Column(children: [
           Image.asset("assets/images/login_image.png", fit: BoxFit.cover),
-          SizedBox(
-            height: 20,
-          ),
+          SizedBox(height: 20),
           Text(
             "Welcome $name",
             style: TextStyle(
@@ -79,11 +79,12 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                       decoration: BoxDecoration(
                         color: Colors.deepPurple,
-                        borderRadius:
-                            BorderRadius.circular(changeButton ? 50 : 8),
+                        borderRadius: BorderRadius.circular(changeButton ? 50 : 8),
                       ),
                     ),
                   ),
+                  
+                  
                   // ElevatedButton(
                   //     child: Text("Login"),
                   //     style: TextButton.styleFrom(
@@ -92,6 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                   //     onPressed: () {
                   //       Navigator.pushNamed(context, MyRoutes.homeRoute);
                   //     })
+
                 ],
               ))
         ])));
