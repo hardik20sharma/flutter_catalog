@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   final String s = "@hardik20sharma";
@@ -6,7 +7,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: Text(
+          "Catalog App",
+          style: TextStyle(
+            color: Colors.white,
+            fontFamily: "Arial"
+          ),
+        ),
       ),
       
       body: Material(
@@ -17,10 +24,7 @@ class HomePage extends StatelessWidget {
         )
       ),
 
-      drawer: Drawer(
-
-      ),
-
+      drawer: MyDrawer(),
     );
   }
 }
