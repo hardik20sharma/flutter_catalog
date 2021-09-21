@@ -8,14 +8,14 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Catalog App",
-          style: TextStyle(
-            color: Colors.white,
-            fontFamily: "Arial"
-          ),
-        ),
+            "Catalog App",
+            style: TextStyle(
+              color: Colors.black,
+              fontFamily: "Arial"
+            ),
+          )
       ),
-      
+
       body: Material(
         child: Center(
           child: Container(
